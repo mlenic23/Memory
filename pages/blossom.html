@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Blossom</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/blossom.css">
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="introduction.html">Introduction</a></li>
+                <li><a href="game.html">Game</a></li> 
+                <li><a href="history.html">History</a></li>
+                <li id="blossom">Blossom</li>  
+            </ul>
+        </nav>
+        <h1>Discover beatiful flowers!</h1>
+    </header>
+
+    <main>
+        <div class="flower-cardA">
+            <img src="../images/Adenium.png" alt="adenium">
+            <h2>Adenium</h2>
+            <p>Known as the desert rose, Adenium is a striking plant with vibrant flowers that thrive in warm climates.</p>
+            <a href="https://plants.ces.ncsu.edu/plants/adenium/" target="_blank">Learn more about Adenium</a>
+        </div>
+
+        <div class="flower-cardC">
+            <img src="../images/Cosmos.png" alt="cosmos">
+            <h2>Cosmos</h2>
+            <p>Delicate, daisy-like flowers that bloom in a variety of colors, symbolizing harmony and peace.</p>
+            <a href="https://www.rhs.org.uk/plants/cosmos" target="_blank">Learn more about Cosmos</a>
+        </div>
+
+        <div class="flower-cardG">
+            <img src="../images/Gerbera.png" alt="gerber">
+            <h2>Gerbera</h2>
+            <p>Cheerful flowers known for their bright colors, often used to convey happiness and cheer.</p>
+            <a href="https://www.interflora.co.uk/page/flower-types/gerberas" target="_blank">Learn more about Gerbera</a>
+        </div>
+
+        <div class="flower-cardR">
+            <img src="../images/Rosa.png" alt="rosa">
+            <h2>Rose</h2>
+            <p>Classic symbols of love and beauty, coming in a wide variety of colors and fragrances.</p>
+            <a href="https://www.britannica.com/plant/rose-plant" target="_blank">Learn more about Rose</a>
+        </div>
+    </main>
+
+    <footer>
+        <button onclick="generateFlower()">What flower are you?</button>
+        <p id="result"></p>
+    </footer>
+
+    <script src="../scripts/blossom.js"></script>
+</body>
+</html>

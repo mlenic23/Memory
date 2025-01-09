@@ -1,0 +1,233 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+    background-color: white;
+    color:palevioletred;
+}
+
+header{
+    text-align: center;
+    background-color: pink;
+    padding-top:0px;
+    padding-bottom:5px;
+}
+
+nav ul{
+    background-color: palevioletred;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    gap:50px;     
+    width: 100%;
+    list-style: none; /*da nema točki pored imena*/
+}
+
+nav ul li{
+    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li a{
+    text-decoration: none; /*da ne bude podcrtano*/
+    color:pink;
+    padding:15px;
+    padding-left:60px;
+    padding-right: 60px;
+    border-radius:5px;
+
+}
+
+#blossom{
+    font-size: 20px;
+    color:white;
+    opacity: 0.5;
+}
+
+nav ul li a:hover{
+    font-size: 20px;
+    background-color:white;
+    opacity: 0.5;
+    color:palevioletred;
+
+}
+
+
+main{
+    padding:20px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:20px;
+}
+
+.flower-cardA{
+    background-color: rgb(249, 211, 217);
+    border-style:double;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding:15px;
+    width:300px;
+    text-align: center;
+}
+
+.flower-cardC{
+    background-color: rgb(249, 211, 217);
+    border-radius: 10px;
+    border-style: double;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding:15px;
+    width:300px;
+    text-align: center;
+}
+
+.flower-cardG{
+    background-color: rgb(249, 211, 217);
+    border-radius: 10px;
+    border-style: double;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding:15px;
+    width:300px;
+    text-align: center;
+}
+
+.flower-cardR{
+    background-color: rgb(249, 211, 217);
+    border-radius: 10px;
+    border-style: double;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding:15px;
+    width:300px;
+    text-align: center;
+}
+
+.flower-cardA img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.flower-cardC img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.flower-cardG img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.flower-cardR img{
+    width:100%;
+    border-radius: 20px;
+}
+
+.flower-cardA h2{
+    color:#ff6f91;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.flower-cardC h2{
+    color:#ff6f91;
+    text-decoration: underline;
+    margin-top: 9px;
+    margin-bottom: 10px;
+}
+
+.flower-cardG h2{
+    color:#ff6f91;
+    margin-top: 1px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.flower-cardR h2{
+    color:#ff6f91;
+    margin-top: 0px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.flower-cardA p{
+    margin-bottom: 25px;
+}
+
+.flower-cardA a{
+    color:white;
+    opacity: 0.9;
+}
+
+.flower-cardA a:hover{
+    color:palevioletred;
+}
+
+
+.flower-cardC a{
+    color:white;
+    opacity: 0.9;
+}
+
+.flower-cardC a:hover{
+    color:palevioletred;
+}
+
+.flower-cardG p{
+    margin-bottom: 8px;
+}
+
+.flower-cardG a{
+    color:white;
+    opacity: 0.9;
+
+}
+
+.flower-cardG a:hover{
+    color:palevioletred;
+}
+
+.flower-cardR a{
+    color:white;
+    opacity: 0.9;
+}
+
+.flower-cardR p{
+    margin-bottom: 25px;
+}
+
+.flower-cardR a:hover{
+    color:palevioletred;
+}
+footer{
+    text-align: center;
+    padding:20px;
+    background-color: #ffccd5;
+    margin-top: 30px;
+}
+
+footer button{
+    background-color: #ff6f91;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-size: 1rem;
+    cursor:pointer;
+}
+
+footer button:hover{
+    background-color: #ff577f;
+}
+
+footer p{
+    margin-top: 10px;
+    font-size:1.2rem;
+}
+
+::selection {
+    background-color: rgb(255, 255, 255); /* Boja pozadine */
+    color: pink; /* Boja teksta */
+  }
+

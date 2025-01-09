@@ -1,0 +1,163 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0;
+    padding:0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url("../images/gameBack.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+nav ul{
+    background-color: palevioletred;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    gap:50px;     /*primjenjujemo flex kako bi mogli staviti u red sve*/
+    width: 100%;
+    list-style: none; /*da nema točki pored imena*/
+}
+
+nav ul li{
+    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li a{
+    text-decoration: none; /*da ne bude podcrtano*/
+    color:pink;
+    padding:15px;
+    padding-left:60px;
+    padding-right: 60px;
+    border-radius:5px;
+
+}
+
+#game{
+    font-size: 20px;
+    color:white;
+    opacity: 0.5;
+}
+
+nav ul li a:hover{
+    font-size: 20px;
+    background-color:white;
+    opacity: 0.5;
+    color:palevioletred;
+
+}
+
+.container{
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:2em;
+
+}
+
+.card{
+    height: 200px;
+    width:200px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width:100%;
+    max-height: 200px;
+    opacity:0;         /*da se slike ne vide odmah*/
+    transition: 0.3s all ease;
+}
+
+.card.clicked {
+    background-color: rgba(255, 255, 255, 0.37);
+
+  }
+  
+  .card.checked {
+    background-color: rgb(216, 200, 210);
+  }
+  
+  .card.clicked img,
+  .card.checked img {
+    opacity: 1;
+  }
+  
+  .card.shake {
+    animation: shake 0.5s;
+  }
+
+  @keyframes shake {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(5px, 0) rotate(5deg);
+    }
+}
+
+.heading{
+    font-family: 'Times New Roman', Times, serif;
+    color: palevioletred;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.decorative-line {
+    height: 5px; 
+    background: linear-gradient(to right, palevioletred, white, palevioletred); 
+    border-radius: 5px; 
+    margin-top:0px;
+    margin-left:45px;
+    width: 45%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.message{
+    font-size: 20px;
+    color: palevioletred;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer hr{
+    margin-top: 0px;
+    border-color: pink;
+}
+
+footer p{
+    display:flex;
+    justify-content: center;
+    color:palevioletred;
+    font-style: italic;
+}
+
+::selection {
+    background-color: rgb(255, 255, 255); 
+    color: pink; 
+  }

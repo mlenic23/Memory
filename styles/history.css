@@ -1,0 +1,173 @@
+body{
+    margin:0px;
+    background-color: white;
+    background-image: url(../images/Historybackground.png);
+    background-size: cover;
+   
+}
+
+nav ul{
+    background-color: #d87093;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    gap:50px;     /*primjenjujemo flex kako bi mogli staviti u red sve*/
+    width: 100%;
+    list-style: none; /*da nema točki pored imena*/
+}
+
+nav ul li{
+    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    text-align: center;
+    line-height: 50px;
+}
+
+nav ul li a{
+    text-decoration: none; /*da ne bude podcrtano*/
+    color:pink;
+    padding:15px;
+    padding-left:60px;
+    padding-right: 60px;
+    border-radius:5px;
+
+}
+
+#history{
+    font-size: 20px;
+    color:white;
+    opacity: 0.5;
+}
+
+nav ul li a:hover{
+    font-size: 20px;
+    background-color:white;
+    opacity: 0.5;
+    color:palevioletred;
+
+}
+
+
+/* Timeline */
+.memory-timeline {
+    background: linear-gradient(to right, #f9c9d1, #d87093);
+    padding: 30px;
+    border-radius: 30px;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 1000px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.memory-timeline h2 {
+    text-decoration: underline;
+    font-size: 40px;
+    color: white;
+    
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Timeline container */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.timeline-container::before { /*pseudo element*/
+    content: ''; /*stavlja prazan sadržaj*/
+    position: absolute;
+    width: 4px; /*koliko će linije biti široka*/
+    background: white;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%); /*horizontalno centriranje*/
+}
+
+/* Timeline item */
+.timeline-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-bubble {
+    background: white;
+    border: 4px solid palevioletred;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: palevioletred;
+    font-size: 24px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.timeline-bubble:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-bubble p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Timeline details */
+.timeline-details {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-details {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.timeline-details p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+footer a{
+    font-size: 20px;
+    color:palevioletred;
+    margin-bottom: 15px;
+    margin-top:15px;
+
+    font-style: italic;
+
+    display:flex;
+    justify-content: center;
+}
+
+footer hr{
+    border-color: palevioletred;
+}
+
+::selection {
+    background-color: rgb(255, 255, 255); 
+    color: pink; 
+  }
