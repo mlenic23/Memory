@@ -6,24 +6,25 @@ body{
    
 }
 
+/*navigation*/
 nav ul{
     background-color: #d87093;
     margin:0px;
     padding:0px;
     display:flex;
-    gap:50px;     /*primjenjujemo flex kako bi mogli staviti u red sve*/
+    gap:50px;     
     width: 100%;
-    list-style: none; /*da nema točki pored imena*/
+    list-style: none;
 }
 
 nav ul li{
-    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    flex:1;  
     text-align: center;
     line-height: 50px;
 }
 
 nav ul li a{
-    text-decoration: none; /*da ne bude podcrtano*/
+    text-decoration: none; 
     color:pink;
     padding:15px;
     padding-left:60px;
@@ -46,7 +47,6 @@ nav ul li a:hover{
 
 }
 
-
 /* Timeline */
 .memory-timeline {
     background: linear-gradient(to right, #f9c9d1, #d87093);
@@ -67,8 +67,6 @@ nav ul li a:hover{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-
-/* Timeline container */
 .timeline-container {
     display: flex;
     flex-direction: column;
@@ -76,22 +74,21 @@ nav ul li a:hover{
     position: relative;
 }
 
-.timeline-container::before { /*pseudo element*/
-    content: ''; /*stavlja prazan sadržaj*/
+.timeline-container::before { 
+    content: ''; 
     position: absolute;
-    width: 4px; /*koliko će linije biti široka*/
+    width: 4px; 
     background: white;
     height: 100%;
     left: 50%;
-    transform: translateX(-50%); /*horizontalno centriranje*/
+    transform: translateX(-50%); 
 }
 
-/* Timeline item */
 .timeline-item {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 7px;;
     margin-bottom: 50px;
     width: 100%;
 }
@@ -128,7 +125,6 @@ nav ul li a:hover{
     font-weight: bold;
 }
 
-/* Timeline details */
 .timeline-details {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
@@ -171,3 +167,52 @@ footer hr{
     background-color: rgb(255, 255, 255); 
     color: pink; 
   }
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .memory-timeline {
+        padding: 20px;
+    }
+
+    .timeline-container::before {
+        left: 10%;
+        width: 2px;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .timeline-bubble {
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .timeline-details {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .memory-timeline h2 {
+        font-size: 24px;
+    }
+
+    .timeline-bubble {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+    }
+
+    .timeline-details p {
+        font-size: 14px;
+    }
+}

@@ -18,7 +18,6 @@ const festivals = [
     "The Fuchsia Festival in Oregon, USA - June"
 ];
 
-// Function to generate a random festival
 function generateFestival() {
     const randomIndex = Math.floor(Math.random() * festivals.length);
     const randomFestival = festivals[randomIndex];

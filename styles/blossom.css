@@ -9,10 +9,10 @@ body{
 header{
     text-align: center;
     background-color: pink;
-    padding-top:0px;
-    padding-bottom:5px;
+    padding:0px 0px 5px 0px;
 }
 
+/*navigation*/
 nav ul{
     background-color: palevioletred;
     margin:0px;
@@ -20,21 +20,19 @@ nav ul{
     display:flex;
     gap:50px;     
     width: 100%;
-    list-style: none; /*da nema točki pored imena*/
+    list-style: none;
 }
 
 nav ul li{
-    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    flex:1;  
     text-align: center;
     line-height: 50px;
 }
 
 nav ul li a{
-    text-decoration: none; /*da ne bude podcrtano*/
+    text-decoration: none; 
     color:pink;
-    padding:15px;
-    padding-left:60px;
-    padding-right: 60px;
+    padding:15px 60px;
     border-radius:5px;
 
 }
@@ -53,7 +51,7 @@ nav ul li a:hover{
 
 }
 
-
+/*flower section*/
 main{
     padding:20px;
     display:flex;
@@ -62,172 +60,219 @@ main{
     gap:20px;
 }
 
-.flower-cardA{
+.flower-cardAdenium, .flower-cardCosmos, .flower-cardGerbera, .flower-cardRose{
     background-color: rgb(249, 211, 217);
+    border-radius: 10px;
     border-style:double;
-    
-    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     padding:15px;
     width:300px;
     text-align: center;
 }
 
-.flower-cardC{
-    background-color: rgb(249, 211, 217);
-    border-radius: 10px;
-    border-style: double;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding:15px;
-    width:300px;
-    text-align: center;
-}
-
-.flower-cardG{
-    background-color: rgb(249, 211, 217);
-    border-radius: 10px;
-    border-style: double;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding:15px;
-    width:300px;
-    text-align: center;
-}
-
-.flower-cardR{
-    background-color: rgb(249, 211, 217);
-    border-radius: 10px;
-    border-style: double;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    padding:15px;
-    width:300px;
-    text-align: center;
-}
-
-.flower-cardA img{
+.flower-cardAdenium img, .flower-cardCosmos img, .flower-cardGerbera img, .flower-cardRose img{
     width:100%;
     border-radius: 20px;
 }
 
-.flower-cardC img{
-    width:100%;
-    border-radius: 20px;
-}
-
-.flower-cardG img{
-    width:100%;
-    border-radius: 20px;
-}
-
-.flower-cardR img{
-    width:100%;
-    border-radius: 20px;
-}
-
-.flower-cardA h2{
+.flower-cardAdenium h2, .flower-cardCosmos h2, .flower-cardGerbera h2, .flower-cardRose h2{
     color:#ff6f91;
     text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.flower-cardAdenium h2{
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 
-.flower-cardC h2{
-    color:#ff6f91;
-    text-decoration: underline;
+.flower-cardCosmos h2{
     margin-top: 9px;
-    margin-bottom: 10px;
 }
 
-.flower-cardG h2{
-    color:#ff6f91;
+.flower-cardGerbera h2{
     margin-top: 1px;
-    text-decoration: underline;
-    margin-bottom: 10px;
 }
 
-.flower-cardR h2{
-    color:#ff6f91;
+.flower-cardRose h2{
     margin-top: 0px;
-    text-decoration: underline;
-    margin-bottom: 10px;
 }
 
-.flower-cardA p{
+.flower-cardAdenium p, .flower-cardCosmos p, .flower-cardGerbera p, .flower-cardRose p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.flower-cardAdenium p, .flower-cardRose{
     margin-bottom: 25px;
 }
 
-.flower-cardA a{
-    color:white;
-    opacity: 0.9;
-}
-
-.flower-cardA a:hover{
-    color:palevioletred;
-}
-
-
-.flower-cardC a{
-    color:white;
-    opacity: 0.9;
-}
-
-.flower-cardC a:hover{
-    color:palevioletred;
-}
-
-.flower-cardG p{
+.flower-cardGerbera p{
     margin-bottom: 8px;
 }
 
-.flower-cardG a{
-    color:white;
-    opacity: 0.9;
-
-}
-
-.flower-cardG a:hover{
-    color:palevioletred;
-}
-
-.flower-cardR a{
+.flower-cardAdenium a, .flower-cardCosmos a, .flower-cardGerbera a, .flower-cardRose a{
     color:white;
     opacity: 0.9;
 }
 
-.flower-cardR p{
-    margin-bottom: 25px;
+.flower-cardAdenium a:hover, .flower-cardCosmos a:hover, .flower-cardGerbera a:hover, .flower-cardRose a:hover {
+    color: palevioletred;
 }
 
-.flower-cardR a:hover{
-    color:palevioletred;
-}
+
+/*footer*/
 footer{
     text-align: center;
-    padding:20px;
+    padding: 20px;
     background-color: #ffccd5;
     margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-footer button{
-    background-color: #ff6f91;
-    color:white;
-    border:none;
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+    margin-bottom: 30px; 
+}
+
+footer p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+input[type="radio"]:checked {
+    accent-color: #d87093;
+}
+
+button {
+    background-color: #d87093;
+    color: white;
+    padding: 12px 20px;
+    border: none;
     border-radius: 5px;
-    padding:10px 20px;
-    font-size: 1rem;
-    cursor:pointer;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
 }
 
-footer button:hover{
-    background-color: #ff577f;
+button:hover {
+    background-color: #ffccd5;
 }
 
-footer p{
-    margin-top: 10px;
-    font-size:1.2rem;
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d87093;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 1; 
+    position: relative; 
 }
 
 ::selection {
-    background-color: rgb(255, 255, 255); /* Boja pozadine */
-    color: pink; /* Boja teksta */
+    background-color: rgb(255, 255, 255); 
+    color: pink; 
   }
+
+/* Responsive Design */
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        gap: 15px;
+    }
+
+    .flower-cardAdenium, .flower-cardCosmos, .flower-cardGerbera, .flower-cardRose {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+    }
+
+    .flower-cardAdenium img, .flower-cardCosmos img, .flower-cardGerbera img, .flower-cardRose img {
+        width: 100%;
+        height: auto;
+    }
+
+    footer button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .flower-cardAdenium, .flower-cardCosmos, .flower-cardGerbera, .flower-cardRose {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .flower-cardAdenium img, .flower-cardCosmos img, .flower-cardGerbera img, .flower-cardRose img {
+        width: 100%;
+        height: auto;
+    }
+
+    .flower-cardAdenium h2, .flower-cardCosmos h2, .flower-cardGerbera h2, .flower-cardRose h2 {
+        font-size: 1rem;
+    }
+
+    footer button {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
 

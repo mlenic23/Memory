@@ -1,11 +1,12 @@
+
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Times New Roman', Times, serif;
     margin:0;
     padding:0;
-}
-
-*{
-    box-sizing: border-box;
 }
 
 main{
@@ -14,18 +15,19 @@ main{
     background-position: center;
 }
 
+/*navigacija*/
 nav ul{
     background-color: palevioletred;
     margin:0px;
     padding:0px;
     display:flex;
-    gap:50px;     /*primjenjujemo flex kako bi mogli staviti u red sve*/
+    gap:50px;     
     width: 100%;
-    list-style: none; /*da nema točki pored imena*/
+    list-style: none; 
 }
 
 nav ul li{
-    flex:1;  /*svaka stavka dobiva jednaku sirinu*/
+    flex:1;  
     text-align: center;
     line-height: 50px;
 }
@@ -63,15 +65,27 @@ nav ul li a:hover{
 .heading{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2rem;
     font-weight: 500;
+    color: palevioletred;
+    font-style: italic;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.decorative-line {
+    height: 5px; 
+    background: linear-gradient(to right, palevioletred, white, palevioletred); 
+    border-radius: 5px; 
+    margin-top:0px;
+    margin-left:45px;
+    width: 45%; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cards{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap:2em;
-
 }
 
 .card{
@@ -99,44 +113,25 @@ nav ul li a:hover{
 
   }
   
-  .card.checked {
+.card.checked {
     background-color: rgb(216, 200, 210);
   }
   
-  .card.clicked img,
-  .card.checked img {
+.card.clicked img, .card.checked img {
     opacity: 1;
   }
   
-  .card.shake {
+.card.shake {
     animation: shake 0.5s;
   }
 
-  @keyframes shake {
+@keyframes shake {
     0%, 100% {
         transform: translate(0, 0) rotate(0deg);
     }
     50% {
         transform: translate(5px, 0) rotate(5deg);
     }
-}
-
-.heading{
-    font-family: 'Times New Roman', Times, serif;
-    color: palevioletred;
-    font-style: italic;
-    font-size: 50px;
-    margin-bottom: 0px;
-}
-
-.decorative-line {
-    height: 5px; 
-    background: linear-gradient(to right, palevioletred, white, palevioletred); 
-    border-radius: 5px; 
-    margin-top:0px;
-    margin-left:45px;
-    width: 45%; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .message{
@@ -161,3 +156,76 @@ footer p{
     background-color: rgb(255, 255, 255); 
     color: pink; 
   }
+
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+    }
+
+    .card {
+        height: 150px;
+        width: 150px;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .decorative-line {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        gap: 5px;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em;
+    }
+
+    .card {
+        height: 120px;
+        width: 120px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .decorative-line {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+}
