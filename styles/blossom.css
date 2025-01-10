@@ -60,6 +60,10 @@ main{
     gap:20px;
 }
 
+.flower-cardRose {
+    margin-bottom: 25px;
+}
+
 .flower-cardAdenium, .flower-cardCosmos, .flower-cardGerbera, .flower-cardRose{
     background-color: rgb(249, 211, 217);
     border-radius: 10px;
@@ -67,7 +71,11 @@ main{
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     padding:15px;
     width:300px;
+    height:500px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .flower-cardAdenium img, .flower-cardCosmos img, .flower-cardGerbera img, .flower-cardRose img{
@@ -99,14 +107,11 @@ main{
 
 .flower-cardAdenium p, .flower-cardCosmos p, .flower-cardGerbera p, .flower-cardRose p{
     font-family: 'Times New Roman', Times, serif;
-}
-
-.flower-cardAdenium p, .flower-cardRose{
     margin-bottom: 25px;
 }
 
-.flower-cardGerbera p{
-    margin-bottom: 8px;
+.flower-cardRose p{
+    margin-top: 4px;
 }
 
 .flower-cardAdenium a, .flower-cardCosmos a, .flower-cardGerbera a, .flower-cardRose a{
