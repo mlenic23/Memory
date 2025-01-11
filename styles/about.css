@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #ddd;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.app-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.app-title {
+    font-size: 24px;
+    color: #ff6f91;
+    font-weight: bold;
+}
+
+/* Main Container */
+main {
+    background-image: url("../images/aboutBackground.jpg");
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+.flower {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-color: white;
+    border-style: dotted;
+}
+
+.flower:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.flower h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.flower-adenium {
+    background: linear-gradient(to bottom, #ff4d8b, #ff70a2);
+}
+
+.flower-cosmos {
+    background: linear-gradient(to bottom, #ff70a2, #ff8bb3);
+}
+
+.flower-gerbera {
+    background: linear-gradient(to bottom, #ff8bb3, #ffaac8);
+}
+
+.flower-rose {
+    background: linear-gradient(to bottom, #ffaac8, #ffbed5);
+}
+
+.flower p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.flower p strong {
+    color: #fff;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
