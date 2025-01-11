@@ -1,4 +1,5 @@
 function generateFlower() {
+    
     const color = document.querySelector('input[name="color"]:checked');
     const personality = document.querySelector('input[name="personality"]:checked');
     const environment = document.querySelector('input[name="environment"]:checked');
