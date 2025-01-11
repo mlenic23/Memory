@@ -15,45 +15,43 @@ main{
     background-position: center;
 }
 
-/*navigacija*/
+/*navigation*/
 nav ul{
     background-color: palevioletred;
+    list-style: none; 
+    width: 100%;
     margin:0px;
     padding:0px;
     display:flex;
-    gap:50px;     
-    width: 100%;
-    list-style: none; 
+    gap:50px;      
 }
 
 nav ul li{
-    flex:1;  
     text-align: center;
     line-height: 50px;
+    flex:1;  
 }
 
 nav ul li a{
-    text-decoration: none; /*da ne bude podcrtano*/
     color:pink;
+    text-decoration: none; 
+    border-radius:5px;
     padding:15px;
     padding-left:60px;
     padding-right: 60px;
-    border-radius:5px;
-
 }
 
 #game{
-    font-size: 20px;
     color:white;
     opacity: 0.5;
+    font-size: 20px;
 }
 
 nav ul li a:hover{
-    font-size: 20px;
     background-color:white;
-    opacity: 0.5;
     color:palevioletred;
-
+    opacity: 0.5;
+    font-size: 20px;
 }
 
 .container{
@@ -63,36 +61,37 @@ nav ul li a:hover{
 }
 
 .heading{
-    text-align: center;
+    color: palevioletred;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
-    color: palevioletred;
     font-style: italic;
     font-size: 50px;
+    text-align: center;
     margin-bottom: 0px;
 }
 
 .decorative-line {
-    height: 5px; 
     background: linear-gradient(to right, palevioletred, white, palevioletred); 
-    border-radius: 5px; 
-    margin-top:0px;
-    margin-left:45px;
-    width: 45%; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: 5px;
+    width: 45%;
+    margin-top:0px;
+    margin-left:45px; 
 }
 
+/*game*/
 .cards{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap:2em;
+    grid-gap:30px;
 }
 
 .card{
-    height: 200px;
-    width:200px;
     background-color: palevioletred;
     border-radius: 10px;
+    height: 200px;
+    width:200px;
     cursor: pointer;
     transition: 0.3s all ease;
 }
@@ -102,28 +101,27 @@ nav ul li a:hover{
 }
 
 .card img{
+    opacity:0;
     width:100%;
-    max-height: 200px;
-    opacity:0;         /*da se slike ne vide odmah*/
+    max-height: 200px;        
     transition: 0.3s all ease;
 }
 
 .card.clicked {
     background-color: rgba(255, 255, 255, 0.37);
-
-  }
+}
   
 .card.checked {
     background-color: rgb(216, 200, 210);
-  }
+}
   
 .card.clicked img, .card.checked img {
     opacity: 1;
-  }
+}
   
 .card.shake {
     animation: shake 0.5s;
-  }
+}
 
 @keyframes shake {
     0%, 100% {
@@ -135,97 +133,28 @@ nav ul li a:hover{
 }
 
 .message{
-    font-size: 20px;
     color: palevioletred;
+    font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+/*footer*/
 footer hr{
-    margin-top: 0px;
     border-color: pink;
+    margin-top: 0px;
 }
 
 footer p{
-    display:flex;
-    justify-content: center;
     color:palevioletred;
     font-style: italic;
+    display:flex;
+    justify-content: center;
 }
 
 ::selection {
     background-color: rgb(255, 255, 255); 
     color: pink; 
-  }
-
-
-  @media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav ul li {
-        text-align: left;
-        padding-left: 20px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1em;
-    }
-
-    .card {
-        height: 150px;
-        width: 150px;
-    }
-
-    .heading {
-        font-size: 2rem;
-    }
-
-    .decorative-line {
-        width: 60%;
-        margin-left: 20%;
-    }
 }
 
-@media screen and (max-width: 480px) {
-    nav ul {
-        gap: 5px;
-    }
 
-    nav ul li {
-        text-align: center;
-    }
-
-    .container {
-        padding: 5px;
-    }
-
-    .cards {
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 0.5em;
-    }
-
-    .card {
-        height: 120px;
-        width: 120px;
-    }
-
-    .heading {
-        font-size: 1.5rem;
-    }
-
-    .decorative-line {
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
-}
+  

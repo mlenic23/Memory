@@ -1,85 +1,92 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>Blossom</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../styles/blossom.css">
-    <link rel="icon" href="../images/FlowerBackground.png" type="image/x-icon">
-</head>
 
+    <head>
+        <title>Blossom</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../styles/blossom.css">
+        <link rel="icon" href="../images/FlowerBackground.png" type="image/x-icon">
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Introduction</a></li>
-                <li><a href="game.html">Game</a></li> 
-                <li><a href="history.html">History</a></li>
-                <li id="blossom">Blossom</li>  
-            </ul>
-        </nav>
-        <h1>Discover beatiful flowers!</h1>
-    </header>
+    <body>
 
-    <main>
-        <section class="flower-cardAdenium">
-            <img src="../images/Adenium.png" alt="adenium">
-            <h2>Adenium</h2>
-            <p>Known as the desert rose, Adenium is a striking plant with vibrant flowers that thrive in warm climates.</p>
-            <a href="../pages/about.html#adenium" target="_blank">Learn more about Adenium</a>
-        </section>
-    
-        <section class="flower-cardCosmos">
-            <img src="../images/Cosmos.png" alt="cosmos">
-            <h2>Cosmos</h2>
-            <p>Delicate, daisy-like flowers that bloom in a variety of colors, symbolizing harmony and peace.</p>
-            <a href="../pages/about.html#cosmos" target="_blank">Learn more about Cosmos</a>
-        </section>
-    
-        <section class="flower-cardGerbera">
-            <img src="../images/Gerbera.png" alt="gerber">
-            <h2>Gerbera</h2>
-            <p>Cheerful flowers known for their bright colors, often used to convey happiness and cheer.</p>
-            <a href="../pages/about.html#gerbera" target="_blank">Learn more about Gerbera</a>
-        </section>
-    
-        <section class="flower-cardRose">
-            <img src="../images/Rosa.png" alt="rosa">
-            <h2>Rose</h2>
-            <p>Classic symbols of love and beauty, coming in a wide variety of colors and fragrances.</p>
-            <a href="../pages/about.html#rose" target="_blank">Learn more about Rose</a>
-        </section>
-    </main>
-    
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Introduction</a></li>
+                    <li><a href="game.html">Game</a></li> 
+                    <li><a href="history.html">History</a></li>
+                    <li id="blossom">Blossom</li>  
+                </ul>
+            </nav>
+            <h1>Discover beatiful flowers!</h1>
+        </header>
 
-    <footer>
-        <h1>Which flower are you?</h1>
-    
-        <form id="quizForm">
-            <p>1. What is your favorite color?</p>
-            <input type="radio" name="color" value="Red"> Red<br>
-            <input type="radio" name="color" value="Pink"> Pink<br>
-            <input type="radio" name="color" value="White"> White<br>
-            <input type="radio" name="color" value="Purple"> Purple<br>
-    
-            <p>2. How would you describe your personality?</p>
-            <input type="radio" name="personality" value="Bold"> Bold<br>
-            <input type="radio" name="personality" value="Elegant"> Elegant<br>
-            <input type="radio" name="personality" value="Delicate"> Delicate<br>
-            <input type="radio" name="personality" value="Mysterious"> Mysterious<br>
-    
-            <p>3. What is your ideal environment?</p>
-            <input type="radio" name="environment" value="Sunny"> Sunny<br>
-            <input type="radio" name="environment" value="Tropical"> Tropical<br>
-            <input type="radio" name="environment" value="Cool and calm"> Cool and calm<br>
-            <input type="radio" name="environment" value="Desert"> Desert<br>
-    
-            <button type="button" onclick="generateFlower()">Submit</button>
-            <p id="result"></p>
-        </form>
-    </footer>
+        <main>
+            <section class="flower-cardAdenium">
+                <img src="../images/Adenium.png" alt="adenium">
+                <h2>Adenium</h2>
+                <p>Known as the desert rose, Adenium is a striking plant with vibrant flowers that thrive in warm climates.</p>
+                <a href="../pages/about.html#adenium">Learn more about Adenium</a>
+            </section>
+        
+            <section class="flower-cardCosmos">
+                <img src="../images/Cosmos.png" alt="cosmos">
+                <h2>Cosmos</h2>
+                <p>Delicate, daisy-like flowers that bloom in a variety of colors, symbolizing harmony and peace.</p>
+                <a href="../pages/about.html#cosmos" >Learn more about Cosmos</a>
+            </section>
+        
+            <section class="flower-cardGerbera">
+                <img src="../images/Gerbera.png" alt="gerber">
+                <h2>Gerbera</h2>
+                <p>Cheerful flowers known for their bright colors, often used to convey happiness and cheer.</p>
+                <a href="../pages/about.html#gerbera">Learn more about Gerbera</a>
+            </section>
+        
+            <section class="flower-cardRose">
+                <img src="../images/Rosa.png" alt="rosa">
+                <h2>Rose</h2>
+                <p>Classic symbols of love and beauty, coming in a wide variety of colors and fragrances.</p>
+                <a href="../pages/about.html#rose">Learn more about Rose</a>
+            </section>
 
-    <script src="../scripts/blossom.js"></script>
-</body>
+            <div class="quiz">
+                <div class="decorative-line"></div>
+                <h1>Which flower describes you?</h1>
+            
+                <form id="quizForm">
+                    <p>1. What is your favorite color?</p>
+                    <input type="radio" name="color" value="Red"> Red<br>
+                    <input type="radio" name="color" value="Pink"> Pink<br>
+                    <input type="radio" name="color" value="White"> White<br>
+                    <input type="radio" name="color" value="Purple"> Purple<br>
+            
+                    <p>2. How would you describe your personality?</p>
+                    <input type="radio" name="personality" value="Bold"> Bold<br>
+                    <input type="radio" name="personality" value="Elegant"> Elegant<br>
+                    <input type="radio" name="personality" value="Delicate"> Delicate<br>
+                    <input type="radio" name="personality" value="Mysterious"> Mysterious<br>
+            
+                    <p>3. What is your ideal environment?</p>
+                    <input type="radio" name="environment" value="Sunny"> Sunny<br>
+                    <input type="radio" name="environment" value="Tropical"> Tropical<br>
+                    <input type="radio" name="environment" value="Cool and calm"> Cool and calm<br>
+                    <input type="radio" name="environment" value="Desert"> Desert<br>
+            
+                    <button type="button" onclick="generateFlower()">Submit</button>
+                    <p id="result"></p>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>"Bloom where your memories thrive."</p>
+        </footer>
+
+        <script src="../scripts/blossom.js"></script>
+
+    </body>
+
 </html>

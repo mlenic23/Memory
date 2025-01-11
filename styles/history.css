@@ -1,70 +1,66 @@
 body{
-    margin:0px;
     background-color: white;
     background-image: url(../images/Historybackground.png);
     background-size: cover;
-   
+    margin:0px;
 }
 
 /*navigation*/
 nav ul{
     background-color: #d87093;
+    list-style: none;
+    width: 100%;
     margin:0px;
     padding:0px;
     display:flex;
     gap:50px;     
-    width: 100%;
-    list-style: none;
 }
 
 nav ul li{
-    flex:1;  
     text-align: center;
     line-height: 50px;
+    flex:1;  
 }
 
 nav ul li a{
-    text-decoration: none; 
     color:pink;
+    text-decoration: none; 
+    border-radius:5px;
     padding:15px;
     padding-left:60px;
     padding-right: 60px;
-    border-radius:5px;
-
 }
 
 #history{
-    font-size: 20px;
     color:white;
     opacity: 0.5;
+    font-size: 20px;
 }
 
 nav ul li a:hover{
-    font-size: 20px;
     background-color:white;
-    opacity: 0.5;
     color:palevioletred;
-
+    opacity: 0.5;
+    font-size: 20px;
 }
 
-/* Timeline */
+/*timeline*/
 .memory-timeline {
     background: linear-gradient(to right, #f9c9d1, #d87093);
-    padding: 30px;
-    border-radius: 30px;
-    margin: 20px auto;
-    text-align: center;
-    max-width: 1000px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 30px;
+    max-width: 1000px;
+    padding: 30px;
+    margin: 20px auto;   
 }
 
 .memory-timeline h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     text-decoration: underline;
     font-size: 40px;
-    color: white;
-    
     margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .timeline-container {
@@ -76,21 +72,21 @@ nav ul li a:hover{
 
 .timeline-container::before { 
     content: ''; 
-    position: absolute;
-    width: 4px; 
     background: white;
+    width: 4px;
     height: 100%;
+    position: absolute; 
     left: 50%;
     transform: translateX(-50%); 
 }
 
 .timeline-item {
+    width: 100%;
+    margin-bottom: 50px;
     position: relative;
     display: flex;
+    gap: 7px;
     align-items: center;
-    gap: 7px;;
-    margin-bottom: 50px;
-    width: 100%;
 }
 
 .timeline-item:nth-child(even) {
@@ -99,39 +95,39 @@ nav ul li a:hover{
 
 .timeline-bubble {
     background: white;
+    color: palevioletred;
+    font-size: 24px;
     border: 4px solid palevioletred;
     border-radius: 50%;
     width: 120px;
     height: 120px;
+    cursor: pointer;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: palevioletred;
-    font-size: 24px;
-    position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 .timeline-bubble:hover {
-    transform: scale(1.2);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.2);
 }
 
 .timeline-bubble p {
-    margin: 0;
     font-size: 14px;
     font-weight: bold;
+    margin: 0;
 }
 
 .timeline-details {
     background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
     opacity: 0;
+    max-width: 300px;
+    padding: 20px;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -147,14 +143,13 @@ nav ul li a:hover{
     line-height: 1.6;
 }
 
+/*footer*/
 footer a{
-    font-size: 20px;
     color:palevioletred;
+    font-style: italic;
+    font-size: 20px;
     margin-bottom: 15px;
     margin-top:15px;
-
-    font-style: italic;
-
     display:flex;
     justify-content: center;
 }
@@ -166,53 +161,6 @@ footer hr{
 ::selection {
     background-color: rgb(255, 255, 255); 
     color: pink; 
-  }
-
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .memory-timeline {
-        padding: 20px;
-    }
-
-    .timeline-container::before {
-        left: 10%;
-        width: 2px;
-    }
-
-    .timeline-item {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .timeline-bubble {
-        width: 100px;
-        height: 100px;
-        font-size: 20px;
-    }
-
-    .timeline-details {
-        max-width: 90%;
-    }
 }
 
-@media screen and (max-width: 480px) {
-    .memory-timeline h2 {
-        font-size: 24px;
-    }
 
-    .timeline-bubble {
-        width: 80px;
-        height: 80px;
-        font-size: 16px;
-    }
-
-    .timeline-details p {
-        font-size: 14px;
-    }
-}

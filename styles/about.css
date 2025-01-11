@@ -1,14 +1,15 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
 }
 
+/*header*/
 header {
     background-color: white;
     padding: 10px 20px;
@@ -24,15 +25,15 @@ header {
 }
 
 .app-logo {
+    border-radius: 50%;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
 }
 
 .app-title {
+    color: palevioletred;
     font-size: 26px;
     font-style: italic;
-    color: #ff6f91;
     font-weight: bold;
 }
 
@@ -43,55 +44,55 @@ main {
     padding: 20px;
 }
 
+/*about*/
 .keyWord {
-    text-decoration: underline; 
     color: #92103e; 
+    text-decoration: underline; 
 }
 
 .flower {
-    padding: 20px;
-    border-radius: 10px;
     color: white;
-    margin-bottom: 20px;
-    width: 100%;
-    max-width: 950px;
-    margin-left: auto;
-    margin-right: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    line-height: 1.6;
-    transform: scale(1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-color: white;
     border-style: dotted;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 950px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .flower:hover {
-    transform: scale(1.02);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
 }
 
 .flower h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 35px;
-    margin-bottom: 10px;
     font-style: italic;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
 }
 
 .flower-adenium {
-    background: linear-gradient(to bottom, #ff4d8b, #ff70a2);
+    background: linear-gradient(to bottom, rgb(196, 79, 118), palevioletred);
 }
 
 .flower-cosmos {
-    background: linear-gradient(to bottom, #ff70a2, #ff8bb3);
+    background: linear-gradient(to bottom, palevioletred, rgb(217, 134, 162));
 }
 
 .flower-gerbera {
-    background: linear-gradient(to bottom, #ff8bb3, #ffaac8);
+    background: linear-gradient(to bottom, rgb(217, 134, 162), rgb(232, 161, 184));
 }
 
 .flower-rose {
-    background: linear-gradient(to bottom, #ffaac8, #ffbed5);
+    background: linear-gradient(to bottom, rgb(232, 161, 184), rgb(244, 193, 209));
 }
 
 .flower p {
@@ -108,26 +109,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/*button*/
 .back-link {
+    background-color: #ffffff; 
+    color: palevioletred;
+    text-decoration: none; 
+    font-size: 16px;
+    border: 2px solid palevioletred;
+    border-radius: 5px; 
+    cursor: pointer; 
+    padding: 10px 15px; 
     position: absolute; 
     top: 20px; 
-    right: 25px; 
-    padding: 10px 15px; 
-    background-color: #ffffff; 
-    color: #ff4d8b; 
-    text-decoration: none; 
-    border-radius: 5px; 
-    border: 2px solid #ff4d8b;
-    font-size: 16px; 
-    cursor: pointer; 
+    right: 25px;  
 }
 
 .back-link:hover {
-    background-color: #ff4d8b;
+    background-color: palevioletred;
     color:white;
 }
 
 ::selection {
     background-color: rgb(255, 255, 255); 
     color: pink; 
-  }
+}
+

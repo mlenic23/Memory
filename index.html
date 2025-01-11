@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>MemoryBlossom game</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/introduction.css">
-    <link rel="icon" href="images/FlowerBackground.png" type="image/x-icon">
 
-</head>
-<body>
-<header>
+    <head>
+        <title>MemoryBlossom game</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles/introduction.css">
+        <link rel="icon" href="images/FlowerBackground.png" type="image/x-icon">
+    </head>
 
-<nav>
-    <ul>
-        <li id="intro">Introduction</li>
-        <li><a href="pages/game.html">Game</a></li> 
-        <li><a href="pages/history.html">History</a></li>
-        <li><a href="pages/blossom.html">Blossom</a></li>  
+    <body>
 
-    </ul>
-</nav>
+    <header>
+        <nav>
+            <ul>
+                <li id="intro">Introduction</li>
+                <li><a href="pages/game.html">Game</a></li> 
+                <li><a href="pages/history.html">History</a></li>
+                <li><a href="pages/blossom.html">Blossom</a></li>  
+            </ul>
+        </nav>
 
-<img src="images/FlowerBackground.png" alt="Flower">
-<h1>MemoryBlossom</h1>
-<h2>Step into the game and let your memory blossom!</h2>
+    <img src="images/FlowerBackground.png" alt="Flower">
+    <h1>MemoryBlossom</h1>
+    <h2>Step into the game and let your memory blossom!</h2>
+    </header>
 
-<div class="festival">
-    <p class="fact" id="festivalFact"></p>
-    <button onclick="generateFestival()>Festival">Random flower festival</button>
-</div>
+        <main>
 
-</header>
+            <div class="festival">
+                <p class="fact" id="festivalFact"></p>
+                <button onclick="generateFestival()>Festival">Random flower festival</button>
+            </div>
 
-    <main>
+            <div class="decorative-line"></div>
+            <h2>Game rules</h2>
+            <div class="GameRules">
 
-        <div class="decorative-line"></div>
-        <h2>Game rules</h2>
-        <div class="GameRules">
+                <div class="rule-section">
+                    <h3><strong>Objective:</strong></h3>
+                    <ul>
+                        <li>Match pairs of cards with identical flowers.</li>
+                    </ul>
+                </div>
 
-             <div class="rule-section">
-                 <h3><strong>Objective:</strong></h3>
-                 <p>Match pairs of cards with identical flowers.</p>
-             </div>
+            <div class="rule-section">
+                <h3><strong>How to play:</strong></h3>
+                <ul>
+                    <li>Flip over two cards at a time.</li>
+                    <li>If they match, they stay face-up. If not, they flip back over.</li>
+                    <li>Continue until all pairs are matched.</li>
+                </ul>
+            </div>
 
-        <div class="rule-section">
-             <h3><strong>How to play:</strong></h3>
-             <ul>
-                 <li>Flip over two cards at a time.</li>
-                 <li>If they match, they stay face-up. If not, they flip back over.</li>
-                 <li>Continue until all pairs are matched.</li>
-             </ul>
-        </div>
-
-        <div class="rule-section">
-             <h3><strong>Winning:</strong></h3>
-             <p>The game ends when all pairs are found.</p>
-        </div>
-        </div>
+            <div class="rule-section">
+                <h3><strong>Winning:</strong></h3>
+                <ul>
+                    <li>The game ends when all pairs are found.</li>
+                </ul>
+            </div>
+            </div>
 
 
-        <div class="WhyPlay">
-             <h3>Why play memory game with flowers?</h3>
+            <div class="WhyPlay">
+                <h3>Why play memory game with flowers?</h3>
 
-            <p>Game boosts memory, concentration, and focus while reducing stress.</p>
-            <p>You will learn interesting facts about different flowers</p>
-            <p>This is relaxing way to challange your mind and discover more about flowers!</p>
-        </div>
+                <p>Game boosts memory, concentration, and focus while reducing stress.</p>
+                <p>You will learn interesting facts about different flowers</p>
+                <p>This is relaxing way to challange your mind and discover more about flowers!</p>
+            </div>
+        </main>
 
-    </main>
-<footer>
-    <hr>
-    <a>"Let your memories bloom forever."</a>
+        <footer>
+            <hr>
+            <a>"Let your memories bloom forever."</a>
+        </footer>
 
-    <script src="scripts/introduction.js"></script>
-</footer>
+        <script src="scripts/introduction.js"></script>
 
-</body>
+    </body>
+
 </html>
