@@ -25,6 +25,6 @@ function generateFlower() {
     }
 
     const resultElement = document.getElementById("result");
-    resultElement.innerText = `You are a ${flower}!`;
+    resultElement.innerText = `${flower}!`;
 }
 
