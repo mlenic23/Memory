@@ -12,7 +12,6 @@ body {
 header {
     background-color: white;
     padding: 10px 20px;
-    border-bottom: 2px solid #ddd;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -31,17 +30,22 @@ header {
 }
 
 .app-title {
-    font-size: 24px;
+    font-size: 26px;
+    font-style: italic;
     color: #ff6f91;
     font-weight: bold;
 }
 
-/* Main Container */
 main {
     background-image: url("../images/aboutBackground.jpg");
     background-position: center;
     background-size: cover;
     padding: 20px;
+}
+
+.keyWord {
+    text-decoration: underline; 
+    color: #92103e; 
 }
 
 .flower {
@@ -103,3 +107,27 @@ main {
 html {
     scroll-behavior: smooth;
 }
+
+.back-link {
+    position: absolute; 
+    top: 20px; 
+    right: 25px; 
+    padding: 10px 15px; 
+    background-color: #ffffff; 
+    color: #ff4d8b; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: 2px solid #ff4d8b;
+    font-size: 16px; 
+    cursor: pointer; 
+}
+
+.back-link:hover {
+    background-color: #ff4d8b;
+    color:white;
+}
+
+::selection {
+    background-color: rgb(255, 255, 255); 
+    color: pink; 
+  }
