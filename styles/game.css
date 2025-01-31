@@ -93,7 +93,7 @@ nav ul li a:hover{
     height: 200px;
     width:200px;
     cursor: pointer;
-    transition: 0.3s all ease;
+    transition: 0.3s ease;
 }
 
 .card:hover{
@@ -104,7 +104,7 @@ nav ul li a:hover{
     opacity:0;
     width:100%;
     max-height: 200px;        
-    transition: 0.3s all ease;
+    transition: 0.3s ease;
 }
 
 .card.clicked {
