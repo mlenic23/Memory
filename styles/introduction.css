@@ -9,16 +9,7 @@ main{
     margin-top:100px;
     margin-left: 10px;
     display:flex;
-    justify-content: space-between;
     flex-direction: column;
-}
-
-main h2{
-    color:palevioletred;
-    font-size: 30px;
-    margin-top: 70px;
-    display:flex;
-    justify-content: center;
 }
 
 /*header*/
@@ -113,6 +104,15 @@ footer hr{
 }
 
 /*game rules*/
+
+main h2{
+    color:palevioletred;
+    font-size: 30px;
+    margin-top: 70px;
+    display:flex;
+    justify-content: center;
+}
+
 .GameRules{
     background-color: palevioletred;
     border: 5px solid white;
@@ -124,15 +124,6 @@ footer hr{
     display: flex;
     flex-direction: row;
     gap:20px;
-    justify-content: flex-start;
-}
-
-.GameRules h2{
-    color:white;
-    text-align: center;
-    text-decoration: underline;
-    opacity: 0.7;
-    margin-bottom: 20px;
 }
 
 .rule-section{
@@ -149,13 +140,10 @@ footer hr{
     margin-bottom: 10px;
 }
 
-.rule-section p, .rule-section ul{
+.rule-section ul{
     color: rgb(249, 169, 182);
     font-size: 18px;
-}
-
-.rule-section ul{
-    padding-left: 20px;
+     padding-left: 20px;
 }
 
 .rule-section ul li{
@@ -174,7 +162,6 @@ footer hr{
 .WhyPlay p{
     color: white;
     font-size: 18px; 
-    line-height: 1.6; 
     margin-bottom: 10px; 
     margin-left:150px;
 }
