@@ -3,8 +3,6 @@ function generateFlower() {
     const color = document.querySelector('input[name="color"]:checked');
     const personality = document.querySelector('input[name="personality"]:checked');
     const environment = document.querySelector('input[name="environment"]:checked');
-    
-    console.log(color, personality, environment);
 
     if (!color || !personality || !environment) {
         alert("Please answer all the questions.");
@@ -26,6 +24,6 @@ function generateFlower() {
     }
 
     const resultElement = document.getElementById("result");
-    resultElement.innerText = `${flower}!`;
+    resultElement.textContent  = `${flower}!`;
 }
 
