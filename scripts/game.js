@@ -12,7 +12,7 @@ const messageElement = document.querySelector(".message");
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
-   if(card.classList.contains("clicked") || card === firstCard){
+   if(card.classList.contains("checked") || card === firstCard){
         return;
     }
     card.classList.add("clicked");
